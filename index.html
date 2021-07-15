@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Калькулятор дат</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <script type="module" src="./js/close.js"></script>
+        <header class="header-base">
+        <select name="choose" id="choose" class="input-select">
+            <option value="nul" selected disabled>Сделайте выбор</option>
+            <option value="opt1">Калькулятор дат</option>
+            <option value="opt2">Таймер</option>
+        
+        </select>
+        </header>
+
+        <main role="main" class="main-content">
+           <section class="jqueryOptions opt1">
+                <div class="content">
+           
+             <form id="calcDate">
+        <h2>Калькулятор дат</h2>
+        <label for="dateForm" >
+            Первая дата:
+        <input type="date" name="dateForm" id="dateForm">
+        </label>
+
+        <label for="dateTo" >
+            Вторая дата:
+        <input type="date" name="dateTo" id="dateTo">
+        </label>
+        <button type="submit">Рассчитать промежуток</button>
+    </form>
+    <p id="outPut"> </p>
+     </div>
+ </section>
+
+
+ <section class="jqueryOptions opt2">
+    <div class="content">
+ 
+<div class="time-dz">
+    <input type="text" name="time" id="time" value="5">
+    <button id="button">Start</button>
+    <input type="submit" value="Stop" onclick="stop()">
+    <div id="timer"></div>
+    <script src="./js/timer.js"></script>
+
+        </div> 
+    </div>
+  </section>
+        
+
+
+
+
+  
+</main>
+</body>
+</html>
+
