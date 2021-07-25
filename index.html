@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Калькулятор дат</title>
-    <script type="module" src="./js/main.js"></script>
+    <script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+
+    <script type="module" src="./js/util/main.js"></script>
     <script type="text/javascript"  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <script type="module" src="./js/close.js"></script>
+    <script type="module" src="./js/util/close.js"></script>
         <header class="header-base">
         <select name="choose" id="choose" class="input-select">
             <option value="nul" selected disabled>Сделайте выбор</option>
@@ -41,19 +43,22 @@
      </div>
  </section>
 
-
+<script type="module" src="./js/components/timer.js"></script>
  <section class="jqueryOptions opt2">
     <div class="content">
  
 <div class="time-dz">
-    <input type="text" name="time" id="time" value="5">
+    <input type="text" name="time" id="time" value="1" placeholder="Введите число">
     <button id="button">Start</button>
-    <input type="submit" value="Stop" onclick="stop()">
+    <input type="submit" value="Stop" onclick="stop()" >
     <div id="timer"></div>
-    <script src="./js/timer.js"></script>
+      </div> 
+     
+    </div> 
+    
+    
 
-        </div> 
-    </div>
+        
   </section>
         
 
